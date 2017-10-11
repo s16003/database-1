@@ -1,3 +1,3 @@
-select sysdate
+select sysdate "Date"
 from dual
 /
