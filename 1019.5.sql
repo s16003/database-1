@@ -1,2 +1,3 @@
-select e.last_name, j.job_id
-from employees e natural join jobs j;
+select employee_id, e.job_id
+from employees e join job_history j using (employee_id)
+where e.job_id = j.job_id;
